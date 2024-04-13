@@ -19,7 +19,7 @@ static int npu_devfreq_target(struct device *dev, unsigned long *freq,
 			      u32 flags);
 
 static struct monitor_dev_profile npu_mdevp = {
-	.type = MONITOR_TYPE_DEV,
+	.type = MONITOR_TPYE_DEV,
 	.low_temp_adjust = rockchip_monitor_dev_low_temp_adjust,
 	.high_temp_adjust = rockchip_monitor_dev_high_temp_adjust,
 #if KERNEL_VERSION(6, 1, 0) <= LINUX_VERSION_CODE
